@@ -11,7 +11,8 @@ angular.module('kleberApp', [
 constant('apiUrl', '/api/').
 constant('mediaUrl', '/media/')
 
-.config(['$routeProvider',function($routeProvider) {
+.config(['$routeProvider','$locationProvider',function($routeProvider, $locationProvider) {
+  $locationProvider.html5Mode(true);
   $routeProvider
     .when('/', {
       templateUrl: '../static/front/views/main.html',
