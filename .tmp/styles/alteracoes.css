@@ -1,0 +1,41 @@
+.imoveis th a {
+    color: #ffffff;
+}
+
+.nenhum {
+    color: blue;
+    margin-top: 30px;
+}
+
+.controles a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+.detalhamento p {
+    font-size: 1.3em;
+}
+
+.desc {
+    font-size: 36px;
+}
+
+.preco {
+    font-size: 40px !important;
+}
+
+.paginacao li button {
+    margin: 0 5px;
+}
+
+.paginacao li button.active {
+    background-color: #00a2e8;
+}
+
+.paginacao li button:disabled {
+    background-color: gray;
+}
+
+.select select:disabled {
+    color: lightgray;
+}
