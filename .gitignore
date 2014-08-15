@@ -3,5 +3,5 @@ app/bower_components/
 front/
 kramosfront/
 dist/
-tmp/
+.tmp/
 .idea/
