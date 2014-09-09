@@ -835,11 +835,12 @@ figure {
 }
 
 .enviar {
-    margin: 0 0 0 257px !important;
+    margin: -6px 0 0 0 !important;
     background: #3f48cc;
     border: 0;
     color: white;
     font-size: 24px;
+    float: right;
     padding: 10px 50px;
 }
 

@@ -20,7 +20,7 @@
             <th><a href="javascript:;" ng-click="conjunto='valor'; reverso = !reverso">Valor</a>
 
         <tr class="listaimoveis" ng-repeat="imovel in imoveis | startFrom:(paginaatual-1)*tamanhopagina | limitTo:tamanhopagina | orderBy:conjunto:reverso">
-            <td class="whitetd"> <a href="imovel/{{ imovel.id }}"><img width="90" height="90" ng-src="media/{{ imovel.imagem }}" alt="Placehold"></a>
+            <td class="whitetd"> <a href="#/imovel/{{ imovel.id }}"><img width="90" height="90" ng-src="media/{{ imovel.imagem }}" alt="Placehold"></a>
             <td> {{ imovel.bairro.cidade.nome }}<td> {{ imovel.bairro.nome }}<td> {{ imovel.quartos }}      <td> {{ imovel.suites }}      <td>
             {{ imovel.vagas }}     <td> {{ imovel.pretencao }}<td> {{ imovel.valor }}
 
