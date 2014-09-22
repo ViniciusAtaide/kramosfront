@@ -66,13 +66,8 @@ p, h1, h2, h3, h4 {
     padding: 0;
 }
 
-
-
 /*/////////*/
 /* Header */
-
-
-
 
 .logo {
     padding: 0;
@@ -93,7 +88,7 @@ p, h1, h2, h3, h4 {
 
 .mainheader {
     position: relative;
-    height: 250px;
+    height: 260px;
     border-bottom: 5px solid #00a2e8;
 }
 
@@ -192,21 +187,21 @@ p, h1, h2, h3, h4 {
 .telefones li {
     width: 100%;
     display: block;
-    padding: 10px 30px;
-    margin: 10px 0;
+    padding: 9px 30px;
+    margin: 9px 0;
     background-color: #3f48cc;
     color: white
 }
 .telefones li:nth-child(2) {
-    margin: 10px 0 0 50px;
+    margin: 9px 0 0 50px;
 }
 
 .telefones li:nth-child(3) {
-    margin: 10px 0 0 100px;
+    margin: 9px 0 0 100px;
 }
 
 .telefones li:nth-child(4) {
-    margin: 10px 0 0 150px;
+    margin: 9px 0 0 150px;
 }
 
 .navigation {
@@ -371,12 +366,12 @@ figure {
     margin: 0 0 0 15px;
 }
 .select select {
+    color: lightgray;
     background: white;
     width: 120px;
     padding: 5px;
     font-size: 24px;
     line-height: 1;
-    color: #676767;
     font-family: "Calibri", sans-serif;
     border: 0;
     border-radius: 5px;
@@ -875,4 +870,74 @@ figure {
 
 .viewChange.ng-leave-active {
     opacity: 0;
+}
+.imoveis th a {
+    color: #ffffff;
+}
+
+.nenhum {
+    color: blue;
+    margin-top: 30px;
+}
+
+.controles a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+.detalhamento p {
+    font-size: 1.3em;
+}
+
+.desc {
+    font-size: 36px;
+}
+
+.preco {
+    font-size: 40px !important;
+}
+
+.paginacao li button {
+    margin: 0 5px;
+}
+
+.paginacao li button.active {
+    background-color: #00a2e8;
+}
+
+.paginacao li button:disabled {
+    background-color: gray;
+}
+
+.s.imoveis th a {
+    color: #ffffff;
+}
+
+.controles a:hover {
+    text-decoration: none;
+    color: blue;
+}
+
+.detalhamento p {
+    font-size: 1.3em;
+}
+
+.desc {
+    font-size: 36px;
+}
+
+.preco {
+    font-size: 40px !important;
+}
+
+.paginacao li button {
+    margin: 0 5px;
+}
+
+.paginacao li button.active {
+    background-color: #00a2e8;
+}
+
+.paginacao li button:disabled {
+    background-color: gray;
 }
