@@ -72,7 +72,7 @@ p, h1, h2, h3, h4 {
 .logo {
     padding: 0;
     position: absolute;
-    top: 184px;
+    top: 188px;
     left: 136px;
     font-weight: 500;
 }
@@ -96,7 +96,7 @@ p, h1, h2, h3, h4 {
     background: url('../images/logo.png');
     width: 452px;
     height: 255px;
-    top: -178px;
+    top: -183px;
     left: -134px;
     position: absolute;
 }
