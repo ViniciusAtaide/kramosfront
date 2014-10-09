@@ -360,15 +360,15 @@ figure {
     width: 157px;
     height: 34px;
     overflow: hidden;
-    background: url('../images/setabaixo.png') no-repeat 130px white;
+    background: no-repeat 130px white;
     margin: 0 0 0 15px;
 }
 .select select {
     color: lightgray;
     background: white;
-    width: 120px;
+    width: 157px;
     padding: 5px;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1;
     font-family: "Calibri", sans-serif;
     border: 0;
@@ -380,12 +380,12 @@ figure {
 
 .valor {
     border: 0;
-    padding: 07px;
+    padding: 7px;
     width: 152px;
     height: 35px;
     position: absolute;
-    top: -1px;
-    font-size: 24px;
+    top: 0px;
+    font-size: 18px;
     font-family: 'Calibri', sans-serif;
     margin: 0 0 0 0;
     box-sizing: border-box;
@@ -400,27 +400,27 @@ figure {
 ::-webkit-input-placeholder {
     color: #676767;
     font-family: 'Calibri', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 :-moz-placeholder { /* Firefox 18- */
     color: #676767;
     font-family: 'Calibri', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
 
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
     color: #676767;
     font-family: 'Calibri', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
 
 }
 
 :-ms-input-placeholder {
     color: #676767;
     font-family: 'Calibri', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
 
 }
 .escondebusca {

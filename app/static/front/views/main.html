@@ -2,13 +2,13 @@
     <div style="height: 1000px;">
         <carousel interval="interval">
             <slide ng-repeat="slide in slides" active="slide.active" >
+              <a href="{{ slide.url }}" style="color: white; text-decoration: none;">
                 <img ng-src="media/{{ slide.imagem }}" style="margin: auto;" alt=""/>
                 <div class="carousel-caption">
-                    <a href="{{ slide.url }}" style="color: white; text-decoration: none;">
                         <h1>{{ slide.texto1 }}</h1>
                         <p>{{ slide.texto2 }}</p>
-                    </a>
                 </div>
+              </a>
             </slide>
         </carousel>
     </div>
