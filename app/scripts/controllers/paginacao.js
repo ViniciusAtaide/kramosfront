@@ -1,7 +1,8 @@
 'use strict';
 
-angular.module('kleberApp')
-  .controller('PaginacaoCtrl', ['$scope',function ($scope) {
+var PaginacaoCtrl =
+  ['$scope',
+  function ($scope) {
     var i;
 
     $scope.paginas = [];
@@ -19,4 +20,5 @@ angular.module('kleberApp')
     for (i=1;i<=$scope.numerodepaginas();i++) {
       $scope.paginas.push(i);
     }
-  }]);
+  }
+  ];

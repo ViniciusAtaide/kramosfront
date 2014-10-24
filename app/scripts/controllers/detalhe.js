@@ -1,6 +1,8 @@
 'use strict';
 
-angular.module('kleberApp').controller('DetalheCtrl', ['$scope', '$timeout', 'imovel', '$modal', function ($scope, $timeout, imovel, $modal) {
+var DetalheCtrl =
+  ['$scope', '$timeout', 'imovel', '$modal',
+  function ($scope, $timeout, imovel, $modal) {
 
   $scope.imovel = imovel;
 
@@ -24,11 +26,20 @@ angular.module('kleberApp').controller('DetalheCtrl', ['$scope', '$timeout', 'im
       controller: 'ModalInstanceCtrl'
     });
   };
-}]);
+}];
 
-
-angular.module('kleberApp').controller('ModalInstanceCtrl', ['$scope', '$modalInstance', function ($scope, $modalInstance) {
+var ModalInstanceCtrl = ['$scope', '$modalInstance', function ($scope, $modalInstance) {
   $scope.dismiss = function () {
     $modalInstance.dismiss('cancel');
   };
-}]);
+}];
+
+DetalheCtrl.resolve = {
+  imovel: ['$route','imovel','$q',function($route, imovel, $q) {
+    var deferred = $q.defer();
+    imovel.get({id: $route.current.params.id}).$promise.then(function(result) {
+      deferred.resolve(result);
+    });
+    return deferred.promise;
+  }]
+};

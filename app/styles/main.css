@@ -541,8 +541,8 @@ figure {
     width: 232px;
     height: 132px;
     content: '';
-    top: -80px;
-    left: -65px;
+    top: -93px;
+    left: -70px;
 }
 
 .footer h3 {
@@ -551,9 +551,9 @@ figure {
 }
 .logofooter p {
     position: absolute;
-    width: 201px;
-    right: 0px;
-    top: 50px;
+    width: 250px;
+    right: -74px;
+    top: 37px;
 }
 .logofooter h1 {
     font-weight: 100;
@@ -847,27 +847,19 @@ figure {
 }
 
 .viewChange {
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+    transition: all 1s ease;
+    z-index: -1;
 }
-.viewChange.ng-enter {
+.viewChange.ng-enter, .viewChange.ng-leave-active {
+    margin-top: -10px;
     opacity: 0;
 }
 
-.viewChange.ng-active {
+.viewChange.ng-leave, .viewChange.ng-enter-active {
+    margin-top: 0;
     opacity: 1;
 }
 
-.viewChange.leave {
-    opacity: 1;
-}
-
-.viewChange.ng-leave-active {
-    opacity: 0;
-}
 .imoveis th a {
     color: #ffffff;
 }
